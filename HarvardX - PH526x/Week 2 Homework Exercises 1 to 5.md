@@ -1,25 +1,12 @@
-### HarvardX |  PH526x 
-### Using Python For Research
+﻿### HarvardX |  PH526x 
+## Using Python For Research
 ### Week 2 Homework: Exercises 1-5
 
 **Exercise 1**
-For our tic-tac-toe board, we will use a numpy array with dimension 3 by 3. </br>
-Write a function create_board() that creates such a board with the value of each cell set to the integer 0. Call create_board() and store it. What is the correct numpy function to initialize our tic-tac-toe board?
+For our tic-tac-toe board, we will use a numpy array with dimension 3 by 3. Write a function create_board() that creates such a board with the value of each cell set to the integer 0. Call create_board() and store it. What is the correct numpy function to initialize our tic-tac-toe board?
 
     np.zeros((3,3), dtype=int)
 
-> The correct Numpy function is np.zeros()
-> First argument is a tuple of values (3, 3) that specifies the dimensions of the new array
-> Second argument is dtype, which specifies the data type (float, by default)
-
-```
-def create_board():
-    board = np.zeros((3,3), dtype=int)
-    return board
-
-board = create_board() 
-
-```
 **Exercise 2**
 Players 1 and 2 will take turns changing values of this array from a 0 to a 1 or 2, indicating the number of the player who places a marker there. Create a function place(board, player, position), where:
 
