@@ -102,7 +102,12 @@ Let's formulate SPARQL queries and run them in Python.
 
 Note that the general syntax for running SPARQL queries using rdflib is as follows:
 
-![QueryGeneralForm.png](attachment:QueryGeneralForm.png)
+```qres = g.query(
+    """ your_SPARQL_Query_goes_here """)
+
+for row in qres:
+    print( ""%s" % row)
+```
 
 So all we need to do is substitute *your_SPARQL_Query_goes_here* with our SPARQL query. We can leave the last two code lines as they are to print out the results. In the following examples, however, we're using different printing variations, just for fun. You can ignore these if you want - or you can substitute the last line with what we have above.
 
